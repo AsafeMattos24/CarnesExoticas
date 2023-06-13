@@ -1,0 +1,771 @@
+/* ==========================================seção de headers ===========================================================*/ 
+body{
+    overflow-x: hidden;
+}
+
+.header__nav {
+    display: flex;
+    overflow: hidden;
+}
+.header__logo {
+    display: flex;
+    flex: 1;
+    position: relative;
+    padding: 20px;
+}
+.header__logo-overlay{
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    background-color: #b1454a;
+}
+.header__menu,
+.header__menu-mobile {
+  padding: 20px;
+
+  flex: 1.236;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 64px;
+  background-color: #fff0de ;
+  list-style: none;
+  margin-top: -10px;
+  margin-bottom: -10px;
+}
+  
+
+.header__menu li {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #121212;
+  cursor: pointer;
+}
+
+.header__menu li img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+.header__menu li a{
+    font-family: "red hat Display";
+    font-weight: 800;
+    color: #121212;
+    text-decoration: none;
+}
+.header__menu-mobile {
+  display: none;
+  gap: 20px;
+
+  position: relative;
+}
+
+/* ============================================= Seção da primeira section ===========================================*/
+
+.hero{
+    display: flex;
+    min-height: calc(100vh - 74px);
+    overflow: hidden;
+}
+
+.hero-img{
+    display: flex;
+    flex:1;
+    flex-direction: column;
+    position: relative;
+    z-index: 5;
+}
+
+.hero-img img {
+    width: 110%;
+    height: 110%;
+    object-fit: contain;
+    border-radius: 100%;
+    transform: rotate(60deg);
+}
+
+.hero-img__overlay{
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    background-color: #b1454a;
+    z-index: -1;
+}
+
+.hero-content{
+    display: flex;
+    flex: 1.22;
+    justify-content: space-between ;
+    flex-direction: column;
+}
+
+.hero-content-info{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    padding: 64px;
+    background-color: #fff0de;
+    
+}
+.hero-content-info h1{
+    font-size: 80px;
+    font-weight: 600px;
+    font-family: "red hat Display" ;
+}
+
+.hero-content-info p{
+    margin: 32px 0 0 32px;
+    font-family: "red hat Display";
+    color: #121212;
+    font-size: 30px;
+    font-weight: 400px;
+}
+.hero-content__testimonials{
+    padding: 32px 34px;
+    display:flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    background-color: white;
+}
+
+.hero-content__clientes{
+    flex: 1;
+    gap:20px;
+}
+.hero-content__clientes h4 {
+    font-size: 25px;
+    font-weight: 400;
+    font-family: "red hat Display";
+}
+.hero-content__review {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "red hat Display";
+    display : flex;
+    flex:1; 
+    align-items: center;
+    gap : 10px;
+    padding-left: 20px;
+    border-left: 1px solid black;
+    min-width: 200px;
+}
+.hero-content__review img{
+    width: 42px;
+    height: 42px;
+    border-radius: 100%;
+    object-fit: contain;
+}
+
+.hero-content__review p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    font-family: "red hat Display";
+    color: black;
+    opacity: 0.8;
+
+}
+
+/*======================================================Quem somos section =================================================*/
+
+.quem-somos {
+    display: flex;
+    min-height: 720px;
+    overflow:hidden;
+}
+.quem-somos__img{
+    display: flex;
+    flex:1;
+    flex-direction:column;
+    justify-content: center;
+    background-color: white;
+    position: relative;
+}
+
+.quem-somos__img div {
+    padding: 32px 64px;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.quem-somos__img-carne{
+    border-bottom: 8px solid #fff0de;
+}
+
+
+.quem-somos__img-carne img{
+    width: 400px;
+    height: 300px;
+}
+.quem-somos__img-carne1 img{
+    width: 400px;
+    height: 300px;
+}
+.quem-somos__content {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    flex-direction: column;
+    padding:64px;
+    background-color:#fff0de;
+}
+
+.carne__title{
+    font-size: 64px;
+    font-weight: 600;
+    font-family: "red hat Display";
+    color: black;
+    margin-top: 16px;
+}
+
+
+.carne__subtitle{
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "red hat Display";
+    color:#EF4B4B ;
+    opacity: 0.8;
+    letter-spacing: -0.01rem;
+}
+
+.carne__transcription{
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "red hat Display";
+    line-height: 36px;
+    letter-spacing: -0.01rem;
+}
+
+/*================================================Carnes Exóticas section===========================================================*/
+
+.carnes-exoticas{
+    display: flex;
+    flex-direction: column;
+    padding: 64px;
+    background-color: #b1454a;
+}
+
+.carnes-exoticas__title{
+ font-size: 56px;
+ font-family: "red hat Display";
+ font-weight: 600;
+ line-height: 78px;
+ color: white;
+ text-align: center;
+}
+
+.carnes-exoticas__filters{
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 48px;
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+.carnes-exoticas__filter-btn{
+    padding: 10px 28px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.05);
+    border-radius: 46px;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    font-family: "red hat Display";
+    color: white;
+    cursor: pointer;
+}
+.carnes-exoticas__filter-btn img {
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+}
+.carnes-exoticas__filter-btn.active{
+background: white;
+color: #b1454a;
+}
+.carnes-exoticas__filter-btn:hover{
+    background: white;
+    color: #b1454a;
+}
+.comidas-exoticas__catalogue{
+    margin-top: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    gap: 56px;
+
+}
+
+.carnes-exoticas__cards{
+    padding: 38px;
+    min-width: 260px;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 36px;
+}
+
+.carnes-exoticas__cards-img{
+    width: 400px;
+    height: 300px;
+    
+    border-radius: 10%;
+}
+.comidas-exoticas__card-title{
+    margin-top: 47px;
+    font-weight: 600;
+    font-family: "red hat Display";
+    font-size: 24px;
+    line-height: 32px;
+    color: white;
+
+}
+
+/*================================================= Carnes Populares Section==============================================*/
+
+.carnes-populares{
+    display: flex;
+    flex-direction: column;
+    padding: 64px;
+    background-color: #fff0de;
+}
+
+.carnes-populares__title{
+ font-size: 56px;
+ font-family: "red hat Display";
+ font-weight: 600;
+ line-height: 78px;
+ color: black;
+ text-align: center;
+}
+
+.carnes-populares__filters{
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 48px;
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+.carnes-populares__filter-btn{
+    padding: 10px 28px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.05);
+    border-radius: 46px;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    font-family: "red hat Display";
+    color: black;
+    cursor: pointer;
+}
+.carnes-populares__filter-btn img {
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+}
+.carnes-populares__filter-btn.active{
+background: black;
+color: #b1454a;
+}
+.carnes-populares__filter-btn:hover{
+    background: black;
+    color: #b1454a;
+}
+.comidas-populares__catalogue{
+    margin-top: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    gap: 56px;
+
+}
+
+.carnes-populares__cards{
+    padding: 38px;
+    min-width: 260px;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 36px;
+}
+
+.carnes-populares__cards-img{
+    width: 400px;
+    height: 300px;
+    
+    border-radius: 10%;
+}
+.comidas-populares__card-title{
+    margin-top: 47px;
+    font-weight: 600;
+    font-family: "red hat Display";
+    font-size: 24px;
+    line-height: 32px;
+    color: black;
+
+}
+
+/* ===================================================Formulário Section============================================*/
+
+#form{
+    width: 300px;
+    margin: 10vh auto 0 auto;
+    padding: 20px;
+    background-color: whitesmoke;
+    border-radius: 4px;
+    font-family:"red hat Display"
+  }
+  #form h1 {
+    text-align: center;
+    color:black;
+  }
+  
+  #form button{
+    padding: 10px;
+    margin-top:10px;
+    width: 100%;
+    background-color:#b1454a;
+    border: none;
+    border-radius: 4px;
+    color:black;
+  }
+  .input-control{
+    display: flex;
+    flex-direction:column;
+  }
+    
+  .input-control input{
+    border: 2px solid black;
+    display:block;
+    border-radius:4px;
+    font-size:12px;
+    padding-top:5px;
+    padding-bottom:5px;
+    width:100%;
+  }
+  .input-control input:focus{
+    outline:0;
+  }
+  .input-control.success input{
+    border-color:#09c377;
+  }
+  .input-control.error input{
+    border-color:#ff3870;
+  }
+  .input-control .error{
+    color:#ff3870;
+    font-size: 9px;
+    height: 13px;
+  }
+  
+  
+  .input2 .error{
+    color:#ff3870;
+    font-size: 9px;
+    height: 13px;
+  }
+  .input3 .error{
+    color:#ff3870;
+    font-size: 9px;
+    height: 13px;
+  }
+  .input4 .error{
+    color:#ff3870;
+    font-size: 9px;
+    height: 13px;
+  }
+
+
+  /*=================================================== Contact Section ==============================================*/
+  .contact {
+      background-color: #b1454a;
+      padding:64px;
+     
+  }
+  .telephone-contact{
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    margin:20px;
+    background-color: #b1454a;
+   justify-content: center;
+    padding-left: 100px;
+  }
+  
+  .telephone-contact img {
+  
+    width: 600px;
+    height: 400px;
+    
+  }
+  .telephone{
+    padding-left: 100px;
+    margin: 7.4vh auto 0 auto; padding: 20px;
+    text-align: center;
+    font-size: 40px;
+    font-family: "red hat Display";
+  }
+  .contact__title{
+    font-size: 56px;
+ font-family: "red hat Display";
+ font-weight: 600;
+ line-height: 78px;
+ color: white;
+ text-align: center;
+  }
+  
+  
+  .telephone h1{
+    padding-top: 60px;
+    font-weight: 600;
+ }
+  
+/* ============================================== Localização Section ==================================================*/
+
+#localização{
+    background-color: #fff0de;
+      padding:64px;
+     
+}
+#localização h1{
+    font-size: 56px;
+ font-family: "red hat Display";
+ font-weight: 600;
+ line-height: 78px;
+ color: black;
+ text-align: center;
+}
+
+#localização iframe {
+  width: 100%;
+  padding-top: 60px;
+}
+
+/*=================================================Footer Section ======================================================*/
+
+footer{
+   
+    display: flex;
+    flex-direction: row;
+    padding-top: 50px;
+    padding-left: 50px;
+    gap: 20px;
+    background-color: #b1454a;
+    overflow: hidden;
+}
+
+footer h3{
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: "red hat Display";
+    color: #121212;
+
+}
+footer img{
+    width: 45%;
+    height: 45%;
+    object-fit: contain;
+}
+
+
+/*========================================Media Queries Section ===================================================*/
+
+
+@media screen and (max-width: 1024px) {
+    .quem-somos {
+      flex-direction: column;
+    }
+  
+    .quem-somos__image {
+      flex-direction: row;
+    }
+  
+    .quem-somos__image-carne {
+      border-bottom: none;
+      border-right: 8px solid var(--color-creamson);
+    }
+  
+   
+  }
+  
+  @media screen and (max-width: 750px) {
+    .quem-somos__image {
+      flex-direction: column;
+    }
+  
+    .quem-somos__image-carne {
+      border-bottom: 8px solid var(--color-creamson);
+      border-right: none;
+    }
+  
+    .quem-somos__button {
+      display: block;
+      top: 47%;
+    }
+  }
+  
+  @media screen and (max-width: 550px) {
+    .quem-somos__image-carne img,
+    .quem-somos__image-carne1 img {
+      width: 50%;
+      height: 160px;
+  
+      object-fit: contain;
+    }
+  
+    .quem-somos__image div {
+      padding: 32px;
+    }
+  
+    
+    .quem-somos__content {
+      padding: 32px;
+    }
+  }
+  /* END: about us media queries */
+  
+  
+  /* START: header media querie */
+  @media screen and (max-width: 900px) {
+    .header__nav {
+      background: var(--primary-color);
+    }
+  
+    .header__menu {
+      display: none;
+    }
+  
+    .header__menu-mobile {
+      display: flex;
+    }
+  }
+  
+  @media screen and (max-width: 550px) {
+    .header__logo {
+      padding-left: 0;
+    }
+  }
+  /* END: header media queries */
+  
+  /* START: hero media queries */
+  @media screen and (max-width: 1060px) {
+    .hero {
+      flex-direction: column;
+    }
+  
+    .hero-image img {
+      width: 100%;
+  
+      transform: matrix(1, 0.05, 0, 1.25, 0, 0) !important;
+    }
+  }
+  
+  @media screen and (max-width: 750px) {
+    .hero-image h2 {
+      font-size: 70px;
+      line-height: 90px;
+    }
+  }
+  
+  @media screen and (max-width: 550px) {
+    .hero-image h2 {
+      font-size: 40px;
+      line-height: 60px;
+    }
+  
+    .hero-content-info {
+      padding: 32px;
+    }
+  
+    .hero-content-info h1 {
+      font-size: 60px;
+    }
+  
+    .hero-content-info p {
+      margin: 32px 0;
+    }
+  
+  
+    .hero-content__testimonial {
+      padding: 32px;
+    }
+  }
+  /* END: hero media queries */
+  
+  /* START: popular media queries */
+  @media screen and (max-width: 550px) {
+    .popular-foods {
+      padding: 64px 32px;
+    }
+  
+    .popular-foods__card,
+    .popular-foods__card.active-card {
+      min-width: 100%;
+    }
+  }
+  /* END: popular media queries */
+  
+  /* START: subscribe media queries */
+  @media screen and (max-width: 550px) {
+    .contact {
+      padding: 64px 32px;
+    }
+  
+    .contact h2 {
+      font-size: 68px;
+      line-height: 100px;
+    }
+  
+     
+     .telephone{
+        display: none;
+     }
+    .telephone-contact {
+      flex-direction: column;
+      gap: 20px;
+  
+      min-width: 100%;
+      border-radius: 20px;
+      padding: 0;
+  
+      border: none;
+    }
+  
+    .telephone-contact input {
+      min-height: 50x;
+      width: 260px;
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      padding: 10px 20px;
+      border-radius: 30px;
+      
+    }
+    
+    
+    .telephone-contact button {
+      min-width: 100%;
+    }
+  }
+ 
